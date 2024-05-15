@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script>
+
+        $(document).ready(function(){
+           
+           $(".div1").click(function(){
+            //when display none of div2
+           // $(".div2").slideDown("2000");
+           //when display is visible
+           // $(".div2").slideUp("3000");
+            $(".div2").slideToggle("3000");
+            
+           })
+
+           })
+      
+    </script>
+    <style>
+        .div1,.div2{
+            padding:50px;
+            text-align: center;
+            font-size: 25px;
+            background-color: yellow;
+            color:black;
+            border:2px solid red;
+            height: 100px;
+            width: 400px;
+        }
+      /*.div2{
+            display: none;
+        } */
+    </style>
+
+</head>
+<body>
+
+
+<div class="div1">Click to show</div>
+<div class="div2">This is shown now</div>
+<div>Hello sir</div>
+
+
+
+    
+    
+</body>
+</html>

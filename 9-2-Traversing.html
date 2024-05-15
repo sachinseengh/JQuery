@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script>
+
+        $(document).ready(function(){
+           // $(".span1").parent().css({"background":"skyblue"});
+           //Return all ancestor
+            //$(".span1").parents().css({"color":"black","fontSize":"20px","border":"2px solid green"});
+            $(".span1").parentsUntil("div").css({"color":"black","fontSize":"20px","border":"2px solid green"});
+        })
+    </script>
+    <style>
+        .ancestor * {
+            display:block;
+            border :2px solid red;
+            font-size: 25px;
+            margin: 10px;
+            padding:10px;
+        }
+    </style>
+</head>
+<body>
+<div class="ancestor" >
+    <div style="width:600px;">div(great Grandparent)
+        <ul>ul(Grandparent)
+            <li>li(Parent)
+                <span class="span1">Span</span>
+                <span>Span</span>
+            </li>
+            <li></li>
+        </ul>
+
+        <ul>
+            <strong>Strong</strong>
+            <strong>Strong</strong>
+        </ul>
+    </div>
+
+
+</div>
+    
+</body>
+</html>

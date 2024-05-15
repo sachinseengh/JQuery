@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script>
+
+        $(document).ready(function(){
+
+            //$("div").children().css({"color":"black","fontSize":"20px","border":"2px solid green"});
+            $("div").find("li").css({"color":"black","fontSize":"20px","border":"2px solid green"});
+        })
+    </script>
+    <style>
+        .descendent * {
+            display:block;
+            border :2px solid red;
+            font-size: 25px;
+            margin: 10px;
+            padding:10px;
+        }
+    </style>
+</head>
+<body>
+<div class="descendent" >
+    <div style="width:600px;">div(great Grandparent)
+        <ul>ul(Grandparent)
+            <li>li(Parent)
+                <span class="span1">Span</span>
+                <span>Span</span>
+            </li>
+            <li></li>
+        </ul>
+
+        <ul>
+            <strong>Strong</strong>
+            <strong>Strong</strong>
+        </ul>
+    </div>
+
+
+</div>
+    
+</body>
+</html>

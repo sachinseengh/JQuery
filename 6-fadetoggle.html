@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script>
+
+        $(document).ready(function(){
+           $("button").click(function(){
+            $(".div3").fadeToggle("slow");
+            $(".div1").fadeToggle();
+            $(".div2").fadeToggle("5000");
+            
+            $(".div4").fadeToggle("fast");
+
+           })
+        })
+    </script>
+    <style>
+        div{
+            height:100px;
+            width:100px;
+            
+        }
+        .div1{
+            background-color: red;
+        }
+        .div2{
+            background-color: rgb(49, 7, 7);
+        }
+        .div3{
+            background-color: rgb(22, 129, 77);
+        }
+        .div4{
+            background-color: rgb(108, 25, 163);
+        }
+    </style>
+</head>
+<body>
+<button>Click to Show</button>
+
+<div class="div1">Div1</div>
+<div class="div2">Div2</div>
+<div class="div3">Div3</div>
+<div class="div4">Div4</div>
+
+
+    
+    
+</body>
+</html>

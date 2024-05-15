@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script>
+
+        $(document).ready(function(){
+          /*  $("#btn1").click(function(){
+                alert($("#demo").text());
+            })
+
+            $("#btn2").click(function(){
+                alert($("#demohtml").html());
+            }) */
+           
+               $("#btn1").click(function(){
+                alert($("#name").val());
+            })
+
+            $("#btn2").click(function(){
+                alert($("#address").val());
+            }) 
+
+        })
+    </script>
+</head>
+<body>
+
+<!-- <p id="demo">This is text content</p>
+<p id ="demohtml">This is Html <strong>Content</strong></p> 
+<button id="btn1">Get Text</button>
+<button id="btn2">Get HTML</button> -->
+
+<p>Name: <input type="text" id="name"></p>
+<p>Address: <input type="text" id="address"></p>
+
+  <button id="btn1">Get Name</button>
+  <button id="btn2">Get Address</button> 
+    
+</body>
+</html>
