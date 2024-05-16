@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script>
+
+        $(document).ready(function(){
+           $("button").click(function(){
+
+
+            //adding a class
+           // $("h2").addClass("demo");
+
+           //adding multiple class
+           //$("h2").addClass("demo borders");
+
+
+           //adding single class to multiple elements
+          // $("h2,h3").addClass("demo");
+
+          //Adding multiple class to different elements
+          //$("h2,h3").addClass("demo borders");
+
+
+
+
+          
+           })
+
+        })
+    </script>
+    <style>
+      .demo{
+        background-color: red;
+      }
+      .borders{
+        border: 2px solid black;
+      }
+    </style>
+</head>
+<body>
+
+<p>Sachin</p>
+<h2 style="font-size:20px;">Demo Text</h2>
+<p>This is the p tag</p>
+<h3 style="font-size:20px;">Demo Text 2</h3>
+<p>This is the another p tag</p>
+<button>Click to add Class </button>
+    
+</body>
+</html>

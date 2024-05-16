@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script>
+
+        $(document).ready(function(){
+           $("button").click(function(){
+
+          var txt ="";
+          txt+="width ="+$(".demo").width();
+          $(".txt").html(txt);
+          
+           })
+
+        })
+    </script>
+    <style>
+      .demo{
+        background-color: rgb(77, 132, 79);
+        border: 2px solid rgb(0, 0, 0);
+        height: 200px;
+        width:400px;
+        
+      }
+      .borders{
+        border: 2px solid black;
+      }
+    </style>
+</head>
+<body>
+
+
+
+
+    <div class="demo">
+        <p class="txt"></p>
+    </div>
+
+<button>Calculate </button>
+    
+</body>
+</html>

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script>
+
+        $(document).ready(function(){
+           $("button").click(function(){
+
+            //it removes the element form dom
+            //$("h2").remove();
+
+
+            //it remove the content
+            $("h2").empty();
+           })
+
+        })
+    </script>
+    <style>
+        h2{
+            height: 100px;
+            width: 100px;
+            background-color: skyblue;
+            border: 2px solid red;
+            font-size: 30px;
+        }
+    </style>
+</head>
+<body>
+
+<p>Sachin</p>
+<h2 style="font-size:20px;">Demo Text</h2>
+<h3 style="font-size:20px;">Demo Text 2</h3>
+<button>Click to Remove h2</button>
+    
+</body>
+</html>

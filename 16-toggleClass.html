@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script>
+
+        $(document).ready(function(){
+           $("button").click(function(){
+
+             $("h2,h3").toggleClass("demo borders");
+          
+           })
+
+        })
+    </script>
+    <style>
+      .demo{
+        background-color: red;
+        border: 2px solid red;
+      }
+      .borders{
+        border: 2px solid black;
+      }
+    </style>
+</head>
+<body>
+
+<p>Sachin</p>
+<h2 >Demo Text</h2>
+<p>This is the p tag</p>
+<h3>Demo Text 2</h3>
+<p>This is the another p tag</p>
+<button>Click to add Class </button>
+    
+</body>
+</html>
